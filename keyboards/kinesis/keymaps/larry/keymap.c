@@ -18,7 +18,7 @@
 * |--------+------+------+------+------+------|                           |------+------+------+------+------+--------|
 * | Shift  |   Z  |   X  |   C  |   V  |   B  |                           |   N  |   M  |  ,.  |  .>  |  /?  | Shift  |
 * `--------+------+------+------+------+-------                           `------+------+------+------+------+--------'
-*          | [{   | ]}   | Left | Right|                                         | Up   | Down |  [{  |  ]}  |
+*          | [{   | ]}   | Left | Right|                                         | Down | Up   |  [{  |  ]}  |
 *          `---------------------------'                                         `---------------------------'
 *                                        ,-------------.         ,-------------.
 *                                        | Gui  | Alt  |         | Alt  | Gui  |
@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	KC_Y   ,KC_U   ,KC_I   ,KC_O   ,KC_P   ,KC_BSLS,
 	KC_H   ,KC_J   ,KC_K   ,KC_L   ,KC_SCLN,KC_QUOT,
 	KC_N   ,KC_M   ,KC_COMM,KC_DOT ,KC_SLSH,KC_RSFT,
-		KC_UP  ,KC_DOWN,KC_LBRC,KC_RBRC,
+		KC_DOWN,KC_UP  ,KC_LBRC,KC_RBRC,
            KC_RALT,KC_RGUI,
            KC_ESC,
            KC_RCTRL,KC_ENTER ,KC_SPC
