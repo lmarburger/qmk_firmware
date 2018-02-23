@@ -1,8 +1,5 @@
 #include "kinesis.h"
 
-// TODO:
-//   - Make Ctrl a fancy Ctrl+Esc key
-
 #define _QWERTY 0
 #define _LOWER 1
 
