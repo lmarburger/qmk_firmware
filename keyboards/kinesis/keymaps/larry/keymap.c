@@ -1,5 +1,8 @@
 #include "kinesis.h"
 
+// TODO:
+//   - Make Ctrl a fancy Ctrl+Esc key
+
 #define _QWERTY 0
 #define _LOWER 1
 #define _RAISE 2
@@ -254,6 +257,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 
+// TODO: Are these this function necessary?
 const uint16_t PROGMEM fn_actions[] = {
 };
 
@@ -272,7 +276,6 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
     return MACRO_NONE;
 };
 
-
 void matrix_init_user(void) {
 }
 
@@ -281,6 +284,7 @@ void matrix_scan_user(void) {
 
 void led_set_user(uint8_t usb_led) {
 }
+// ENDTODO
 
 
 }
