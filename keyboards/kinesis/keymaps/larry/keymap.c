@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * Keymap: Qwerty Default Layer
 *
 * ,----------------------------------------------------------------- -----------------------------------------------------------------.
-* | Esc    |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  | |  F9  |  F10 |  F11 |  F12 | PSCR | SLCK | PAUS |  FN0 |  BOOT  |
+* | Esc    |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  | |  F9  |  F10 |  F11 |  F12 | Prev | Play | Next | Vol- |  Vol+  |
 * |--------+------+------+------+------+------+--------------------- ---------------------+------+------+------+------+------+--------|
 * | `~     |  1!  |  2@  |  3#  |  4$  |  5%  |                                           |  6^  |  7&  |  8*  |  9(  |  0)  | -_     |
 * |--------+------+------+------+------+------|                                           +------+------+------+------+------+--------|
@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                   OMG    ,
                                   KC_BSPC,KC_ESC ,KC_LCTL,
 
-  KC_F9  ,KC_F10 ,KC_F11 ,KC_F12 ,KC_PSCR ,KC_SLCK  ,KC_PAUS, KC_FN0, KC_1,
+  KC_F9  ,KC_F10 ,KC_F11 ,KC_F12 ,KC_MPRV,KC_MPLY,KC_MNXT,KC_VOLD,KC_VOLU,
                           KC_6   ,KC_7   ,KC_8   ,KC_9   ,KC_0   ,KC_MINS,
                           KC_Y   ,KC_U   ,KC_I   ,KC_O   ,KC_P   ,KC_BSLS,
                           KC_H   ,KC_J   ,KC_K   ,KC_L   ,KC_SCLN,KC_QUOT,
