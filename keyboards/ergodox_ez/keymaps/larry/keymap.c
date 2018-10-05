@@ -17,9 +17,14 @@ enum larry_keycodes {
   WTF
 };
 
+// TODO:
+//  - [ ] Update ascii drawings from Kinesis mappings
+//  - [ ] Add media keys
+//  - [ ] Probably disable LEDs
+//  - [ ] Check out default `process_record_user() stuff`
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-// TODO: Update from Kinesis keymap
 /****************************************************************************************************
 *
 * Keymap: Qwerty Default Layer
@@ -202,12 +207,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 
-/*
-const uint16_t PROGMEM fn_actions[] = {
-    [1] = ACTION_LAYER_TAP_TOGGLE(SYMB)                // FN1 - Momentary Layer 1 (Symbols)
-};
-*/
-
 const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
 {
   // MACRODOWN only works in this function
@@ -251,43 +250,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   }
   return true;
 }
-
-// TODO: Check out this default stuff
-/*
-enum custom_keycodes {
-  PLACEHOLDER = SAFE_RANGE, // can always be here
-  EPRM,
-  VRSN,
-  RGB_SLD
-};
-
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  switch (keycode) {
-    // dynamically generate these.
-    case EPRM:
-      if (record->event.pressed) {
-        eeconfig_init();
-      }
-      return false;
-      break;
-    case VRSN:
-      if (record->event.pressed) {
-        SEND_STRING (QMK_KEYBOARD "/" QMK_KEYMAP " @ " QMK_VERSION);
-      }
-      return false;
-      break;
-    case RGB_SLD:
-      if (record->event.pressed) {
-        #ifdef RGBLIGHT_ENABLE
-          rgblight_mode(1);
-        #endif
-      }
-      return false;
-      break;
-  }
-  return true;
-}
-*/
 
 // Runs just one time when the keyboard initializes.
 void matrix_init_user(void) {
@@ -372,3 +334,43 @@ uint32_t layer_state_set_user(uint32_t state) {
 
   return state;
 };
+
+/*
+const uint16_t PROGMEM fn_actions[] = {
+    [1] = ACTION_LAYER_TAP_TOGGLE(SYMB)                // FN1 - Momentary Layer 1 (Symbols)
+};
+
+enum custom_keycodes {
+  PLACEHOLDER = SAFE_RANGE, // can always be here
+  EPRM,
+  VRSN,
+  RGB_SLD
+};
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  switch (keycode) {
+    // dynamically generate these.
+    case EPRM:
+      if (record->event.pressed) {
+        eeconfig_init();
+      }
+      return false;
+      break;
+    case VRSN:
+      if (record->event.pressed) {
+        SEND_STRING (QMK_KEYBOARD "/" QMK_KEYMAP " @ " QMK_VERSION);
+      }
+      return false;
+      break;
+    case RGB_SLD:
+      if (record->event.pressed) {
+        #ifdef RGBLIGHT_ENABLE
+          rgblight_mode(1);
+        #endif
+      }
+      return false;
+      break;
+  }
+  return true;
+}
+*/
