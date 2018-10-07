@@ -55,16 +55,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ______,    KC_Q,   KC_W,   KC_E,   KC_R,   KC_T, KC_EQUAL,
     KC_TAB,    KC_A,   KC_S,   KC_D,   KC_F,   KC_G,
     KC_LSHIFT, KC_Z,   KC_X,   KC_C,   KC_V,   KC_B, KC_LSHIFT,
-       ______, ______, ______, ______, ______,
+    ______,    ______, ______, ______, ______,
                                            KC_LGUI,   KC_LALT,
                                                       OMG,
                                 KC_BSPACE, KC_ESCAPE, KC_LCTRL,
 
-    KC_BSLASH, KC_6,   KC_7, KC_8,     KC_9,   KC_0,      ______,
-    KC_MINUS,  KC_Y,   KC_U, KC_I,     KC_O,   KC_P,      ______,
-               KC_H,   KC_J, KC_K,     KC_L,   KC_SCOLON, KC_QUOTE,
-    KC_RSHIFT, KC_N,   KC_M, KC_COMMA, KC_DOT, KC_SLASH,  KC_RSHIFT,
-                     ______, ______,   ______, ______, ______,
+    KC_BSLASH, KC_6, KC_7,   KC_8,     KC_9,   KC_0,      ______,
+    KC_MINUS,  KC_Y, KC_U,   KC_I,     KC_O,   KC_P,      ______,
+               KC_H, KC_J,   KC_K,     KC_L,   KC_SCOLON, KC_QUOTE,
+    KC_RSHIFT, KC_N, KC_M,   KC_COMMA, KC_DOT, KC_SLASH,  KC_RSHIFT,
+                     ______, ______,   ______, ______,    ______,
     KC_RALT,  KC_RGUI,
     WTF,
     KC_RCTRL, KC_ENTER, KC_SPACE
@@ -107,7 +107,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ______, ______,  ______,  ______, ______,   ______, ______,
           KC_LEFT, KC_DOWN, KC_UP,  KC_RIGHT, ______, ______,
   ______, ______,  ______,  ______, ______,   ______, ______,
-  ______, ______,  ______,  ______, ______,
+                   ______,  ______, ______,   ______, ______,
   ______, ______,
   ______,
   ______, ______, ______
@@ -150,7 +150,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ______, ______, ______,              ______,               ______,      ______,      ______,
             ______, KC_LEFT_CURLY_BRACE, KC_RIGHT_CURLY_BRACE, KC_LBRACKET, KC_RBRACKET, ______,
     ______, ______, ______,              ______,               ______,      ______,      ______,
-    ______, ______, ______,              ______,               ______,
+                    ______,              ______,               ______,      ______,      ______,
     ______, ______,
     ______,
     ______, ______, ______
@@ -193,7 +193,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ______, ______, ______, ______, ______, ______, ______,
             KC_6,   KC_7,   KC_8,   KC_9,   KC_0,   ______,
     ______, ______, ______, ______, ______, ______, ______,
-    ______, ______, ______, ______, ______,
+                    ______, ______, ______, ______, ______,
     ______, ______,
     ______,
     ______, ______, ______
@@ -345,7 +345,7 @@ uint32_t layer_state_set_user(uint32_t state) {
     ______, ______, ______, ______, ______, ______, ______,
             ______, ______, ______, ______, ______, ______,
     ______, ______, ______, ______, ______, ______, ______,
-    ______, ______, ______, ______, ______,
+                    ______, ______, ______, ______, ______,
     ______, ______,
     ______,
     ______, ______, ______
