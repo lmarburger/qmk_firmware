@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 * ├────────┼──────┼──────┼──────┼──────┼──────┤      │  │      ├──────┼──────┼──────┼──────┼──────┼────────┤
 * │ Tab    │  A   │  S   │  D   │  F   │  G   ├──────┤  ├──────┤  H   │  J   │  K   │  L   │  ;:  │ '"     │
 * ├────────┼──────┼──────┼──────┼──────┼──────┤      │  │      ├──────┼──────┼──────┼──────┼──────┼────────┤
-* │ Shift  │  Z   │  X   │  C   │  V   │  B   │ Shift│  │ Shift│  N   │  M   │  ,<  │  .>  │  /?  │ Shift  │
+* │ Shift  │  Z   │  X   │  C   │  V   │  B   │ Wtf  │  │ Omg  │  N   │  M   │  ,<  │  .>  │  /?  │ Shift  │
 * └─┬──────┼──────┼──────┼──────┼──────┼──────┴──────┘  └──────┴──────┼──────┼──────┼──────┼──────┼──────┬─┘
 *   │      │      │      │  `~  │  =+  │                              │  -_  │  \|  │      │      │      │
 *   └──────┴──────┴──────┴──────┴──────┘                              └──────┴──────┴──────┴──────┴──────┘
@@ -51,16 +51,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ______,    KC_1,   KC_2,   KC_3,     KC_4,   KC_5, ______,
     ______,    KC_Q,   KC_W,   KC_E,     KC_R,   KC_T, KC_TAB,
     KC_TAB,    KC_A,   KC_S,   KC_D,     KC_F,   KC_G,
-    KC_LSHIFT, KC_Z,   KC_X,   KC_C,     KC_V,   KC_B, KC_LSHIFT,
+    KC_LSHIFT, KC_Z,   KC_X,   KC_C,     KC_V,   KC_B, WTF,
     ______,    ______, ______, KC_GRAVE, KC_EQUAL,
                    KC_LGUI,   KC_LALT,
                               OMG,
         KC_BSPACE, KC_ESCAPE, KC_LCTRL,
 
-    ______,    KC_6, KC_7,   KC_8,     KC_9,   KC_0,      ______,
-    KC_QUOTE,  KC_Y, KC_U,   KC_I,     KC_O,   KC_P,      ______,
-               KC_H, KC_J,   KC_K,     KC_L,   KC_SCOLON, KC_QUOTE,
-    KC_RSHIFT, KC_N, KC_M,   KC_COMMA, KC_DOT, KC_SLASH,  KC_RSHIFT,
+    ______,   KC_6, KC_7,   KC_8,     KC_9,   KC_0,      ______,
+    KC_QUOTE, KC_Y, KC_U,   KC_I,     KC_O,   KC_P,      ______,
+              KC_H, KC_J,   KC_K,     KC_L,   KC_SCOLON, KC_QUOTE,
+    OMG,      KC_N, KC_M,   KC_COMMA, KC_DOT, KC_SLASH,  KC_RSHIFT,
                      KC_MINUS, KC_BSLASH,   ______, ______,    ______,
         KC_RALT,  KC_RGUI,
         WTF,
