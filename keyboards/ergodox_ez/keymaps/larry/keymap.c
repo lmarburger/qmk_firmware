@@ -92,7 +92,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_OMG] = LAYOUT_ergodox(
     ______, ______,            ______,          ______,              ______,              ______,              ______,
     ______, ______,            ______,          ______,              ______,              ______,              KC_MEDIA_PLAY_PAUSE,
-    ______, ______,            KC_MS_LEFT,      KC_MS_DOWN,          KC_MS_UP,            KC_MS_RIGHT,
+    ______, ______,            MS_LEFT,         MS_DOWN,             MS_UP,               MS_RGHT,
     ______, KC_AUDIO_VOL_DOWN, KC_AUDIO_VOL_UP, KC_MEDIA_PREV_TRACK, KC_MEDIA_NEXT_TRACK, ______,              ______,
     ______, ______,            ______,          ______,              ______,
                 ______, ______,
@@ -106,7 +106,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                      ______,  ______, ______,   ______, ______,
         ______, ______,
         ______,
-        ______, KC_MS_BTN2, KC_MS_BTN1
+        ______, MS_BTN2, MS_BTN1
   ),
 
 /****************************************************************************************************
