@@ -1,6 +1,7 @@
 #include QMK_KEYBOARD_H
 #include "action_layer.h"
 #include "version.h"
+#include "host.h"
 
 #define ______ KC_TRNS
 
@@ -13,7 +14,8 @@ enum larry_layers {
 
 enum larry_keycodes {
   OMG = SAFE_RANGE,
-  WTF
+  WTF,
+  DICT
 };
 
 // TODO:
@@ -100,7 +102,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ______, ______, ______,
 
     ______, ______,  ______,  ______, ______,   ______, ______,
-    ______, ______,  ______,  ______, ______,   ______, ______,
+      DICT, ______,  ______,  ______, ______,   ______, ______,
             KC_LEFT, KC_DOWN, KC_UP,  KC_RIGHT, ______, ______,
     ______, ______,  ______,  ______, ______,   ______, ______,
                      ______,  ______, ______,   ______, ______,
@@ -224,6 +226,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       } else {
         layer_off(_WTF);
         update_tri_layer(_OMG, _WTF, _LOL);
+      }
+      return false;
+      break;
+    case DICT:
+      if (record->event.pressed) {
+        host_consumer_send(0x00CF);
+      } else {
+        host_consumer_send(0);
       }
       return false;
       break;
